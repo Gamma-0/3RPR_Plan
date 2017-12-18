@@ -1,4 +1,4 @@
-clear all;
+clear all; close all;
 % Objectif : trouver le centre de gravité C du robot à partir des coordonnées acticulaires :
 % - La position des bases des 3 membres du robot A1, A2 et A3
 % - La longueur des membres A1R1, A2R2, A3R3
