@@ -1,3 +1,4 @@
+clear all;
 % Objectif : déterminer à partir du centre de gravité C du robot
 % - Les positions des points R1, R2, et, R3
 % - Les longueurs des articulations A1R1,  A2R2 et A3R3

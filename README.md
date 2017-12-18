@@ -1,5 +1,6 @@
-# Fonctionnement
+# README
 
+## Fonctionnement
 Il y a deux fichiers principaux :
 - MGI.m, qui calcule le modèle géométrique inverse d'un robot 3RPR
 - MGD.m, qui calcule le modèle géométrique directe d'un robot 3RPR
@@ -21,3 +22,9 @@ Les solutions du système sont dans la variable G  et sont au nombre de 6 :
 - Colonne 1 : coordonnée en abscisse du centre de gravité
 - Colonne 2 : coordonnée en ordonnée du centre de gravité
 - Colonne 3 : rotation sur l'axe z du triangle
+
+
+## Sources
+
+- Design and control of a three degree-of-freedom planar parallel robot, Joshi, Atul Ravindra, https://etd.ohiolink.edu/pg_10?0::NO:10:P10_ACCESSION_NUM:ohiou1175180058
+- Solutions polynomiales au probleme de la cinematique directe des manipulateurs paralleles plans a trois degres de liberte, Clément Gosselin, https://www.academia.edu/12514527/Solutions_polynomiales_au_probleme_de_la_cinematique_directe_des_manipulateurs_paralleles_plans_a_trois_degres_de_liberte
