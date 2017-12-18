@@ -37,8 +37,8 @@ p2 = 15.38^2;      % A2 - R2
 p3 = 12^2;         % A3 - R3
 
 % Chaque ligne de cette matrice donne une solution au système
-% Colonne 1 : coordonnée en abscisse du point de la ligne
-% Colonne 2 : coordonnée en ordonnée du point de la ligne
+% Colonne 1 : coordonnée en abscisse du barycentre de R1R2R3
+% Colonne 2 : coordonnée en ordonnée du barycentre de R1R2R3
 % Colonne 3 : rotation sur l'axe z du triangle
 G = zeros(6,3); % G stocke les différentes solutions du MGD
 
@@ -72,9 +72,9 @@ RV_SU = (R*V - S*U);
 equation = SA1_VA2^2 + RA1_UA2^2 - p1*RV_SU^2;    % Les valeurs de t annulant l'equation sont les valeurs possibles de t dans le système défini
 equation = simplify(equation);
 
-P = numden(equation);     % Extraire polynome caracteristique du MGD (numérateur) du quotient
-C = coeffs(P);            % Extraire coefficients du polynome caractéristique (ordonnés par degrés croissants par coeffs)
-C = fliplr(C);            % Inverser la matrice (avec fliplr, coefficients ordonnés par degrés décroissants)
+P = numden(equation);   % Extraire polynome caracteristique du MGD (numérateur) du quotient
+C = coeffs(P);          % Extraire coefficients du polynome caractéristique (ordonnés par degrés croissants par coeffs)
+C = fliplr(C);          % Inverser la matrice (avec fliplr, coefficients ordonnés par degrés décroissants)
 
 t_list = roots(C);      % Déterminer racines du polynome. Ces racines sont les valeurs possibles de l'angle t en radian
 
